@@ -16,7 +16,7 @@ After cloning or downloading the repository enter the new directory created and 
 You are now ready to begin!
 
 ### Usage
-`node liri.js [my-tweets|spotify-this-song|movie-this|do-what-it-says]`
+`node liri.js [tweet-this | spotify-this-song | movie-this | do-what-it-says]`
 
 For Spotify and OMDB an additional search parameter can be specified.
 
@@ -27,4 +27,4 @@ OMDB example:
 
 ### See the app in action!
 
-![Alt Text](https://github.com/{user}/{repo}/raw/master/lira-node-app.gif)
+![Alt Text](https://github.com/jasapper/liri-node-app/raw/master/lira-node-app.gif)
