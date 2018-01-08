@@ -17,7 +17,6 @@ if (userChoice === "my-tweets") {
 
     var client = new Twitter(keys.twitter);
     
-
 	client.get('statuses/user_timeline', params, function(error, tweets, response) {
   		if (!error & response.statusCode === 200) {
   			for (var i = 0; i < tweets.length; i++) {
@@ -42,12 +41,9 @@ if (userChoice === "spotify-this-song") {
     		var data = data.tracks.items[0];
     		console.log("****************************************");
 			console.log("Artist(s): "+data.album.artists[0].name);
-			
 			console.log("Song Name: "+data.name);
-			
 			console.log("Link: "+data.artists[0].external_urls.spotify);
-			
-            console.log("Album: "+data.album.name);
+	        console.log("Album: "+data.album.name);
             console.log("****************************************");
     	} 
 	});
@@ -93,13 +89,9 @@ if (userChoice === "do-what-it-says") {
             spotify.search({ type: 'track', query: array[1] }, function(err, data) {
 				//used to shorten repeat code
 				var data = data.tracks.items[0];
-				
 				console.log("Artist(s): "+data.album.artists[0].name);
-			
 				console.log("Song Name: "+data.name);
-			
 				console.log("Link: "+data.artists[0].external_urls.spotify);
-			
 				console.log("Album: "+data.album.name);
 			})
 		}
